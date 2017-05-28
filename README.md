@@ -6,9 +6,9 @@ The graphs are the next:
 > **Lines plot**: or spaguetti plot where x values are the variables that describes the same object.  
   
   
-[![](R-Boostrap-for-a-linear-model/lm_boostrap.png)](https://github.com/rcruces/R-graph/R-Boostrap-for-a-linear-model)  
+[![](R-Boostrap-for-a-linear-model/lm_boostrap.png)](https://github.com/rcruces/R-graph/tree/master/R-Boostrap-for-a-linear-model)  
 
-[![](R-Boxplot-with-points-Density/Rplot-box-pts.png)](https://github.com/rcruces/R-graph/R-Boxplot-with-points-Density)  
+[![](R-Boxplot-with-points-Density/Rplot-box-pts.png)](https://github.com/rcruces/R-graph/tree/master/R-Boxplot-with-points-Density)  
 
-[![](R-spaghetti_plot/R-spaghetti_plot.png)](https://github.com/rcruces/R-graph/R-spaghetti_plot)
+[![](R-spaghetti_plot/R-spaghetti_plot.png)](https://github.com/rcruces/R-graph/tree/master/R-spaghetti_plot)
 
