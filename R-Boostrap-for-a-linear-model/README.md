@@ -4,4 +4,4 @@ The confidence intervals of 95% are showed as a shaded area in the linear regres
   
 1. `lm_boost.R`, the R code file.  
 2. `lm_boostrap.png`, a png example of the resultant plot.  
-![alt tag](https://github.com/rcruces/R-Boostrap-for-a-linear-model/blob/master/lm_boostrap.png)
+![](lm_boostrap.png)
