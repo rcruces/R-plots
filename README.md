@@ -5,6 +5,8 @@ The graphs are the next:
 > **Boxplot with density**: A modified boxplot with each point graphed and the ensity histogram.  
 > **Lines plot**: or spaguetti plot where x values are the variables that describes the same object.  
   
+  
+![](R-Boostrap-for-a-linear-model/lm_boostrap.png)](https://github.com/rcruces/R-graph)
 ![alt tag](https://github.com/rcruces/R-Boostrap-for-a-linear-model/blob/master/lm_boostrap.png)  
 ![alt tag](https://github.com/rcruces/R-Boxplot-with-points-Density/blob/master/Rplot-box-pts.png)  
 ![alt tag](https://github.com/rcruces/R-spaghetti_plot/blob/master/R-spaghetti_plot.png)
