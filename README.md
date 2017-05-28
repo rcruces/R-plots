@@ -7,6 +7,6 @@ The graphs are the next:
   
   
 ![](R-Boostrap-for-a-linear-model/lm_boostrap.png)](https://github.com/rcruces/R-graph)
-![alt tag](https://github.com/rcruces/R-Boostrap-for-a-linear-model/blob/master/lm_boostrap.png)  
-![alt tag](https://github.com/rcruces/R-Boxplot-with-points-Density/blob/master/Rplot-box-pts.png)  
-![alt tag](https://github.com/rcruces/R-spaghetti_plot/blob/master/R-spaghetti_plot.png)
+![](R-Boxplot-with-points-Density/Rplot-box-pts.png)](https://github.com/rcruces/R-graph)
+![](R-spaghetti_plot/R-spaghetti_plot.png)](https://github.com/rcruces/R-graph)
+
