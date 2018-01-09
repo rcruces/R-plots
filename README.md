@@ -8,7 +8,8 @@ The graphs are the next:
 For more R graphs check this [gallery](http://www.r-graph-gallery.com).  
   
 [![](R-Boostrap-for-a-linear-model/lm_boostrap.png)](https://github.com/rcruces/R-graph/tree/master/R-Boostrap-for-a-linear-model)  
-
+  
+## Boxplot with density and points  
 [![](R-Boxplot-with-points-Density/Rplot-box-pts.png)](https://github.com/rcruces/R-graph/tree/master/R-Boxplot-with-points-Density)  
 
 [![](R-spaghetti_plot/R-spaghetti_plot.png)](https://github.com/rcruces/R-graph/tree/master/R-spaghetti_plot)
