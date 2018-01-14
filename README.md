@@ -6,7 +6,7 @@ List of plots:
 > **Boxplot with density**: A modified boxplot with each point graphed and the ensity histogram.  
 > **Lines plot**: or spaguetti plot where x values are the variables that describes the same object.  
 > **Heatmap**: comming soon!  
-> **Circular dendogram** also comming soon!  
+> **Circular dendrogram** also comming soon!  
   
 | Lineal Model & Bootstrap  | Boxplot with Density | Lines plot  |
 | ------------- | ------------- | ------------- |
