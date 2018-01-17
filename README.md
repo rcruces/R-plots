@@ -15,6 +15,6 @@ List of plots:
 
 | Custom Heatmap  | Circular Dendrogram | Colormaps  |
 | ------------- | ------------- | ------------- |
-| [![](https://farm5.staticflickr.com/4656/39716130002_eaf75d9bed_n.jpg)]()  |   |   |
+| [![](https://farm5.staticflickr.com/4656/39716130002_eaf75d9bed_n.jpg)](https://github.com/rcruces/R-plots/blob/master/R-heatmap/README.md)  |   |   |
   
 For more R graphs check this [external gallery](http://www.r-graph-gallery.com).  
