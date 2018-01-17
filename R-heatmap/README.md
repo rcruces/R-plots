@@ -1,4 +1,6 @@
--   [Heatmap](#heatmap)
+Heatmap Contents
+================
+-   [Heatmap Definition](#heatmap-definition)
     -   [Description of the files](#description-of-the-files)
 -   [Iris Dataset](#iris-dataset)
     -   [Requirements and Data Processing](#requirements-and-data-processing)
@@ -9,8 +11,8 @@
     -   [More Arguments](#more-arguments)
     -   [Heatmap per Cluster](#heatmap-per-cluster)
 
-Heatmap
-=======
+Heatmap Definition
+==================
 
 A heatmap is a matrix of values represented with colors. If you use it along a clustering method such as *Hierarchical agglomerative clustering*, heatmap are a very good approach to visualize the diferences between groups.
 
