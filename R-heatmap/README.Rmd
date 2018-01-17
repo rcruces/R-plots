@@ -1,57 +1,56 @@
--   [Heatmap](#heatmap)
-    -   [Description of the files](#description-of-the-files)
--   [Iris Dataset](#iris-dataset)
-    -   [Requirements and Data Processing](#requirements-and-data-processing)
--   [Heatmap Customization](#heatmap-customization)
-    -   [Color map](#color-map)
-    -   [Data Scaling](#data-scaling)
-    -   [Colormap Optimization](#colormap-optimization)
-    -   [More Arguments](#more-arguments)
-    -   [Heatmap per Cluster](#heatmap-per-cluster)
+---
+title: "Heatmap of Iris Database"
+author: "Raúl RC"
+output: 
+  md_document:
+    variant: markdown_github
+    toc: true    # table of content true
+    toc_depth: 2 # upto three depths of headings (specified by #, ## and ###)
+---
 
-Heatmap
-=======
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 
-A heatmap is a matrix of values represented with colors. If you use it along a clustering method such as *Hierarchical agglomerative clustering*, heatmap are a very good approach to visualize the diferences between groups.
-
+# Heatmap  
+A heatmap is a matrix of values represented with colors. If you use it along a clustering method such as *Hierarchical agglomerative clustering*, heatmap are a very good approach to visualize the diferences between groups.  
+  
 In this example we will use the [*Iris* flower dataset](https://en.wikipedia.org/wiki/Iris_flower_data_set), and we will create a custom color palette to optimize the visualization. Finally we'll explore diferent ploting of the data.
+  
+## Description of the files  
+Inside this Directory you will find:
+  1. README.Rmd	      R-markdown document with the example.
+  1. README.md        README format for github.
+  1. heatmap_code.R   Only the code without explanations.
 
-Description of the files
-------------------------
 
-Inside this Directory you will find: 1. README.Rmd R-markdown document with the example. 1. heatmap\_code.R Only the code without explanations. 1.
-
-Iris Dataset
-============
-
+# Iris Dataset  
 The [*Iris* flower dataset](https://en.wikipedia.org/wiki/Iris_flower_data_set) contains 5 variables and 150 observations. The data consists of 50 samples of three species of Iris:
 
--   *I. Setosa*
+- *I. Setosa*
 
--   *I. Versicolor*
+- *I. Versicolor*
 
--   *I. Virginica*
+- *I. Virginica*  
 
-The columns 1 to 4 have the morphological characteristics of each Iris observation:
+The columns 1 to 4 have the morphological characteristics of each Iris observation:  
 1. *Sepal Length*
 
-1.  *Sepal Width*
+1. *Sepal Width*
 
-2.  *Petal Length*
+1. *Petal Length*
 
-3.  *Petal Width*
+1. *Petal Width*
+  
+The fifth column corresponds to the name of species. ON the next figure you can see what are these features:
+![](https://farm5.staticflickr.com/4751/39683081242_ed4d0de9e0_o.png)  
+  
+## Requirements and Data Processing  
+1. We have to install the library `gplots` in case we don't have it yet.    
+ `install.packages(gplots)`
 
-The fifth column corresponds to the name of species. ON the next figure you can see what are these features: ![](https://farm5.staticflickr.com/4751/39683081242_ed4d0de9e0_o.png)
-
-Requirements and Data Processing
---------------------------------
-
-1.  We have to install the library `gplots` in case we don't have it yet.
-    `install.packages(gplots)`
-
-2.  Now let's upload the library `gplots`, then slice all the observations from column 1 to 4 to a matrix object.
-
-``` r
+1. Now let's upload the library `gplots`, then slice all the observations from column 1 to 4 to a matrix object.
+```{r echo=TRUE, warning=FALSE, error=FALSE, message=FALSE}
 # Uploads the library
 library(gplots)
 
@@ -62,17 +61,10 @@ iris.mtx <- as.matrix(iris[,1:4])
 heatmap.2(iris.mtx)
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-1-1.png)
-
-Heatmap Customization
-=====================
-
-Color map
----------
-
+# Heatmap Customization  
+## Color map  
 First let's change the default colormap for our own. For more information about creating Custom R colormaps [click here]().
-
-``` r
+```{r echo=TRUE, warning=FALSE, error=FALSE, message=FALSE}
 # Vector of custom colors
 pinzon <- c("#ffdfbaff","#ec7531ff","#9e2f0eff","#4b2a00ff","#64070cff","#b40000ff","#ed1c17ff","#f7202fff")
 
@@ -82,31 +74,21 @@ pinzon.Ramp <- colorRampPalette(pinzon)
 # Heatmap with our custom colormap
 heatmap.2(iris.mtx, col=pinzon.Ramp(20))
 ```
-
-![](README_files/figure-markdown_github/unnamed-chunk-2-1.png)
-
-Data Scaling
-------------
-
-The latter heatmap looks very nice, however when differents variables are plotted together, each variable should be standadized (or scaled). This mean that each column must have a mean value of 0 and a standard deviation of 1.
-Standardized variables are most frequently used to compare an observation to a standard normal deviate, and they help to compare among different variables that describe an observation in a given sample or between groups.
-
-``` r
+  
+## Data Scaling  
+The latter heatmap looks very nice, however when differents variables are plotted together,  each variable should be standadized (or scaled). This mean that each column must have a mean value of 0 and a standard deviation of 1.  
+Standardized variables are most frequently used to compare an observation to a standard normal deviate,  and they help to compare among different variables that describe an observation in a given sample or between groups.  
+```{r echo=TRUE, warning=FALSE, error=FALSE, message=FALSE}
 # Standardizing the variables
 iris.scaled <- scale(iris.mtx)
 
 # Heatmap with our custom colormap & Standarized variables 
 heatmap.2(iris.scaled, col=pinzon.Ramp(20))
 ```
-
-![](README_files/figure-markdown_github/unnamed-chunk-3-1.png)
-
-Colormap Optimization
----------------------
-
-When we scaled the data, we realized that the color distribution may not be the optimal for visualization. To create an optimal distribution of colors according to our data an extra step is needed. We'll create a function that optimize the color distribution based on the sample distribution.
-
-``` r
+ 
+## Colormap Optimization  
+When we scaled the data, we realized that the color distribution may not be the optimal for visualization. To create an optimal distribution of colors according to our data an extra step is needed. We'll create a function that optimize the color distribution based on the sample distribution.  
+```{r echo=TRUE, warning=FALSE, error=FALSE, message=FALSE}
 # Function that optimizes the color distribution
 optim.color <- function(Data,Colors) {
   #       Data: Is the matrix of data to plot
@@ -129,15 +111,19 @@ col.map <- optim.color(iris.scaled,pinzon)
 # Heatmap with Data scaled and custom colors optimized
 heatmap.2(iris.scaled, col=col.map$color.palette, breaks = col.map$palette.breaks)
 ```
+  
+## More Arguments  
+Here we'll add a color code per group in the rows, and some modifications to the heatmap output. Group color code is the next:
+```{r echo=FALSE, warning=FALSE, error=FALSE, message=FALSE,fig.height=4,fig.width=5}
+# Vector of colors per group
+col.group <- c("#7331adff","#6d62d9ff","#2c1563ff")[as.factor(iris$Species)]
 
-![](README_files/figure-markdown_github/unnamed-chunk-4-1.png)
+# Legend of the group colors
+plot(rep(0.5,3),1:3,xlim=c(0,2),ylim=c(0.5,3.5),pch=15,cex=8,col=c("#7331adff","#6d62d9ff","#2c1563ff"),axes = F,bty='n',xlab = "",ylab = "")
+text(rep(0.75,3),1:3,levels(iris$Species),cex = 3,pos =4)
+```
 
-More Arguments
---------------
-
-Here we'll add a color code per group in the rows, and some modifications to the heatmap output. Group color code is the next: ![](README_files/figure-markdown_github/unnamed-chunk-5-1.png)
-
-``` r
+```{r echo=TRUE, warning=FALSE, error=FALSE, message=FALSE}
 # More Customizations
 heatmap.2(iris.scaled,                 # Data matrix
           main = "Iris Dataset",       # Main Title
@@ -158,14 +144,10 @@ heatmap.2(iris.scaled,                 # Data matrix
 )
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-6-1.png)
 
-Heatmap per Cluster
--------------------
-
-Here we will use the [*Ward Method*](https://en.wikipedia.org/wiki/Hierarchical_clustering) for hierarchical clustering of the rows, and we'll plot each cluster as a heatmap individually. In this example We will define the cluster cut as k=3.
-
-``` r
+## Heatmap per Cluster 
+Here we will use the [*Ward Method*](https://en.wikipedia.org/wiki/Hierarchical_clustering) for hierarchical clustering of the rows, and we'll plot each cluster as a heatmap individually. In this example We will define the cluster cut as k=3.  
+```{r echo=TRUE, warning=FALSE, error=FALSE, message=FALSE}
 # Transpose the distance matrix and clusters the columns
 hc.cols <- hclust(dist(t(iris.scaled)),method = "ward.D2")
 
@@ -198,11 +180,7 @@ for (K in 1:3) {
             breaks = col.map$palette.breaks,
             srtCol=1, cexCol=1.5, adjCol = 0.5)
 }
-```
 
-![](README_files/figure-markdown_github/unnamed-chunk-7-1.png)![](README_files/figure-markdown_github/unnamed-chunk-7-2.png)![](README_files/figure-markdown_github/unnamed-chunk-7-3.png)
-
-``` r
 # Cluster Heatmap 
 heatmap.2(as.matrix(iris.cluster), 
             main = "Iris Clusters", 
@@ -219,5 +197,3 @@ heatmap.2(as.matrix(iris.cluster),
             breaks = col.map$palette.breaks,
             srtCol=1, cexCol=1.5, adjCol = 0.5)
 ```
-
-![](README_files/figure-markdown_github/unnamed-chunk-7-4.png)
