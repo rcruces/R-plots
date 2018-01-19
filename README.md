@@ -15,6 +15,6 @@ List of plots:
 
 | Custom Heatmap  | Circular Dendrogram | Colormaps  |
 | ------------- | ------------- | ------------- |
-| [![](https://farm5.staticflickr.com/4656/39716130002_eaf75d9bed_n.jpg)](https://github.com/rcruces/R-plots/tree/master/R-heatmap)  |   | [![](https://farm5.staticflickr.com/4749/24902677477_6a5db0a937_o.png)](https://github.com/rcruces/R-plots/tree/master/R-colors)  |
+| [![](https://farm5.staticflickr.com/4656/39716130002_eaf75d9bed_n.jpg)](https://github.com/rcruces/R-plots/tree/master/R-heatmap)  |   | [![](https://farm5.staticflickr.com/4749/24902677477_9623eb1cf2_q.jpg)](https://github.com/rcruces/R-plots/tree/master/R-colors)  |
   
 For more R graphs check this [external gallery](http://www.r-graph-gallery.com).  
