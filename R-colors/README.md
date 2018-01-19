@@ -3,7 +3,7 @@
     -   [Color Selection](#color-selection)
     -   [Color Alpha](#color-alpha)
     -   [Color Interpolation](#color-interpolation)
-    -   [[Color Optimization](https://github.com/rcruces/R-plots/blob/master/R-heatmap/README.md)](#color-optimization)
+    -   [Color Optimization](#color-optimization)
     -   [Color palettes from `R` to `matlab`](#color-palettes-from-r-to-matlab)
     -   [Custom Color Palettes](#custom-color-palettes)
     -   [Custom Color Palettes Interpolated](#custom-color-palettes-interpolated)
