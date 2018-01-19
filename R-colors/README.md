@@ -1,3 +1,5 @@
+Custom Color Palettes
+=====================
 -   [Repository content:](#repository-content)
 -   [Colors and Data Visualization](#colors-and-data-visualization)
     -   [Color Selection](#color-selection)
