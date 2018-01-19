@@ -15,9 +15,9 @@ Description of the files
 ------------------------
 
 Inside this Directory you will find:
-1. README.md  github markdown format
-1. README.Rmd R-markdown document with the example.
-1. heatmap\_code.R Only the code without explanations.
+1. `README.md`  github markdown format
+1. `README.Rmd` R-markdown document with the example.
+1. `heatmap\_code.R` Only the code without explanations.
 
 Heatmap Definition
 ==================
@@ -46,7 +46,7 @@ The columns 1 to 4 have the morphological characteristics of each Iris observati
 
 3.  *Petal Width*
 
-The fifth column corresponds to the name of species. ON the next figure you can see what are these features: ![](https://farm5.staticflickr.com/4751/39683081242_ed4d0de9e0_o.png)
+The fifth column corresponds to the name of species. On the next figure you can see what are these features: ![](https://farm5.staticflickr.com/4751/39683081242_ed4d0de9e0_o.png)
 
 Requirements and Data Processing
 --------------------------------
