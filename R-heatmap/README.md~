@@ -11,20 +11,17 @@ Heatmap Contents
     -   [More Arguments](#more-arguments)
     -   [Heatmap per Cluster](#heatmap-per-cluster)
 
-Description of the files
-------------------------
-
-Inside this Directory you will find:
-1. README.md  github markdown format
-1. README.Rmd R-markdown document with the example.
-1. heatmap\_code.R Only the code without explanations.
-
 Heatmap Definition
 ==================
 
 A heatmap is a matrix of values represented with colors. If you use it along a clustering method such as *Hierarchical agglomerative clustering*, heatmap are a very good approach to visualize the diferences between groups.
 
 In this example we will use the [*Iris* flower dataset](https://en.wikipedia.org/wiki/Iris_flower_data_set), and we will create a custom color palette to optimize the visualization. Finally we'll explore diferent ploting of the data.
+
+Description of the files
+------------------------
+
+Inside this Directory you will find: 1. README.Rmd R-markdown document with the example. 1. heatmap\_code.R Only the code without explanations. 1.
 
 Iris Dataset
 ============
