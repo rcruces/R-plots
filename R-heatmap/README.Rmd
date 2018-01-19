@@ -88,6 +88,8 @@ heatmap.2(iris.scaled, col=pinzon.Ramp(20))
  
 ## Colormap Optimization  
 When we scaled the data, we realized that the color distribution may not be the optimal for visualization. To create an optimal distribution of colors according to our data an extra step is needed. We'll create a function that optimize the color distribution based on the sample distribution.  
+![](https://farm5.staticflickr.com/4760/24902460257_f5395d8d01_o.png)  
+
 ```{r echo=TRUE, warning=FALSE, error=FALSE, message=FALSE}
 # Function that optimizes the color distribution
 optim.color <- function(Data,Colors) {

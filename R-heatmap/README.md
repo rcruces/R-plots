@@ -17,7 +17,7 @@ Description of the files
 Inside this Directory you will find:
 1. `README.md`  github markdown format
 1. `README.Rmd` R-markdown document with the example.
-1. `heatmap\_code.R` Only the code without explanations.
+1. `heatmap_code.R` Only the code without explanations.
 
 Heatmap Definition
 ==================
@@ -110,6 +110,8 @@ Colormap Optimization
 ---------------------
 
 When we scaled the data, we realized that the color distribution may not be the optimal for visualization. To create an optimal distribution of colors according to our data an extra step is needed. We'll create a function that optimize the color distribution based on the sample distribution.
+
+![](https://farm5.staticflickr.com/4760/24902460257_f5395d8d01_o.png)
 
 ``` r
 # Function that optimizes the color distribution
