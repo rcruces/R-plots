@@ -40,7 +40,7 @@ barplot(groups[1,],                            # Input data as vector
         col = c("darkorange","firebrick1","mediumpurple1","skyblue")   # Box colors
         )
 
-# Seconth Stacked Barplot
+# second Stacked Barplot
 barplot(groups[2,], 
         offset=groups[1,],  # Offset of the new barplot
         add=T,              # add plot
@@ -51,7 +51,7 @@ barplot(groups[2,],
         space=0)
 # Third Stacked Barplot
 barplot(groups[3,], 
-        offset=groups[1,]+groups[2,], # The third stack will begin over the first+ seconth stack
+        offset=groups[1,]+groups[2,], # The third stack will begin over the first+ second stack
         add=T, axes=F, axisnames=F,
         border="gray80",col=c("darkorange4","firebrick4","mediumpurple4","skyblue4"), space=0)
 
@@ -87,10 +87,10 @@ kable(grades)
 
 |               |  Math|  Biology|  Physics|  Chemistry|
 |---------------|-----:|--------:|--------:|----------:|
-| Homeworks     |    89|       70|       59|         51|
-| Final Exam    |    64|       71|       69|         89|
-| Partial Exams |    86|       94|       52|         93|
-| Exercises     |    74|       61|       98|         56|
+| Homeworks     |    64|       57|       88|         62|
+| Final Exam    |    82|       72|       96|         56|
+| Partial Exams |    89|       87|      100|         87|
+| Exercises     |    51|       71|      100|         55|
 
 ### Grades Percentage
 
@@ -106,10 +106,10 @@ kable(grades.per)
 
 |               |   Math|  Biology|  Physics|  Chemistry|
 |---------------|------:|--------:|--------:|----------:|
-| Homeworks     |  22.25|    17.50|    14.75|      12.75|
-| Final Exam    |  16.00|    17.75|    17.25|      22.25|
-| Partial Exams |  21.50|    23.50|    13.00|      23.25|
-| Exercises     |  18.50|    15.25|    24.50|      14.00|
+| Homeworks     |  16.00|    14.25|       22|      15.50|
+| Final Exam    |  20.50|    18.00|       24|      14.00|
+| Partial Exams |  22.25|    21.75|       25|      21.75|
+| Exercises     |  12.75|    17.75|       25|      13.75|
 
 ### Grades Stacked Barplots
 
@@ -168,3 +168,5 @@ text(labels=rownames(grades.per), col=color.matrix[,2], x=rep(3.5,4), y=c(85,90,
 ```
 
 ![](stacked_plot_files/figure-markdown_github/unnamed-chunk-5-1.png)
+
+It is possible to generalize `stack.plot` to create your stacked plots no with only one function, need of ggplots.
