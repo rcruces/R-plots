@@ -15,7 +15,8 @@ Here we'll plot the number of observations in four groups, and three possible co
 1. Excluded
 2. Included
 3. Incomplete
-&gt; NOTE: Border color, color, and space could be different per stack and per bar.
+
+> NOTE: Border color, color, and space could be different per stack and per bar.
 
 ``` r
 # Matrix of 3x4, 3 conditions, 4 groups. Filled with random values
@@ -29,13 +30,13 @@ colnames(groups) <- c("Group A", "Group B", "Group C", "Group D")
 
 # Barplot with the first row
 labs<- paste(colnames(groups), ", n=", apply(groups,2,sum), sep="") # number of observation per group
-barplot(groups[1,],                       # Input data as vector
-        main = "Group Distribution",      # Main title
-        names.arg =labs,                  # X labels
-        space=0,                          # Space between columns
-        ylim=c(0,20),                     # Y-axis limits
-        ylab = "Number of observations",  # Y-axis label
-        border="gray80",                  # Box color border
+barplot(groups[1,],                            # Input data as vector
+        main = "Group Distribution",           # Main title
+        names.arg =labs,                       # X labels
+        space=0,                               # Space between columns
+        ylim=c(0,max(apply(groups,2,sum))+2),  # Y-axis limits
+        ylab = "Number of observations",       # Y-axis label
+        border="gray80",                       # Box color border
         col = c("darkorange","firebrick1","mediumpurple1","skyblue")   # Box colors
         )
 
@@ -69,7 +70,6 @@ Stacked plot: Grades
 --------------------
 
 Now let's suppouse we have the grades of one student. Each column corresponds to the course and the rows to the grades.
-\#\#\# Raw Grades
 
 ``` r
 # Matrix of 3x4, 3 conditions, 4 groups. Filled with random values
@@ -87,10 +87,10 @@ kable(grades)
 
 |               |  Math|  Biology|  Physics|  Chemistry|
 |---------------|-----:|--------:|--------:|----------:|
-| Homeworks     |    97|       79|       59|         90|
-| Final Exam    |    76|       76|       79|         92|
-| Partial Exams |    51|       62|       99|         55|
-| Exercises     |    63|       84|       51|         55|
+| Homeworks     |    89|       70|       59|         51|
+| Final Exam    |    64|       71|       69|         89|
+| Partial Exams |    86|       94|       52|         93|
+| Exercises     |    74|       61|       98|         56|
 
 ### Grades Percentage
 
@@ -106,10 +106,10 @@ kable(grades.per)
 
 |               |   Math|  Biology|  Physics|  Chemistry|
 |---------------|------:|--------:|--------:|----------:|
-| Homeworks     |  24.25|    19.75|    14.75|      22.50|
-| Final Exam    |  19.00|    19.00|    19.75|      23.00|
-| Partial Exams |  12.75|    15.50|    24.75|      13.75|
-| Exercises     |  15.75|    21.00|    12.75|      13.75|
+| Homeworks     |  22.25|    17.50|    14.75|      12.75|
+| Final Exam    |  16.00|    17.75|    17.25|      22.25|
+| Partial Exams |  21.50|    23.50|    13.00|      23.25|
+| Exercises     |  18.50|    15.25|    24.50|      14.00|
 
 ### Grades Stacked Barplots
 

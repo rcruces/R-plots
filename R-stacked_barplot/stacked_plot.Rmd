@@ -26,9 +26,10 @@ Here we'll plot the number of observations in four groups, and three possible co
 1. Excluded  
 2. Included  
 3. Incomplete  
+
 > NOTE: Border color, color, and space could be different per stack and per bar.  
 
-```{r, echo=TRUE,results='hide', message=FALSE, warning=FALSE}
+```{r, echo=TRUE}
 # Matrix of 3x4, 3 conditions, 4 groups. Filled with random values
 groups <- matrix(sample(1:10, 3*4, replace=T), 3, 4, byrow = TRUE)
 
@@ -40,13 +41,13 @@ colnames(groups) <- c("Group A", "Group B", "Group C", "Group D")
 
 # Barplot with the first row
 labs<- paste(colnames(groups), ", n=", apply(groups,2,sum), sep="") # number of observation per group
-barplot(groups[1,],                       # Input data as vector
-        main = "Group Distribution",      # Main title
-        names.arg =labs,                  # X labels
-        space=0,                          # Space between columns
-        ylim=c(0,20),                     # Y-axis limits
-        ylab = "Number of observations",  # Y-axis label
-        border="gray80",                  # Box color border
+barplot(groups[1,],                            # Input data as vector
+        main = "Group Distribution",           # Main title
+        names.arg =labs,                       # X labels
+        space=0,                               # Space between columns
+        ylim=c(0,max(apply(groups,2,sum))+2),  # Y-axis limits
+        ylab = "Number of observations",       # Y-axis label
+        border="gray80",                       # Box color border
         col = c("darkorange","firebrick1","mediumpurple1","skyblue")   # Box colors
         )
 
@@ -74,10 +75,9 @@ plot.n(groups[2,],(groups[2,]/2)+groups[1,])
 plot.n(groups[3,],(groups[3,]/2)+groups[1,]+groups[2,])
 ```
 
-
 ## Stacked plot: Grades  
 Now let's suppouse we have the grades of one student. Each column corresponds to the course and the rows to the grades.  
-### Raw Grades
+
 ```{r, echo=TRUE, results='asis'}
 # Matrix of 3x4, 3 conditions, 4 groups. Filled with random values
 grades <- matrix(sample(50:100, 4*4, replace=T), 4, 4, byrow = TRUE)
@@ -94,7 +94,7 @@ kable(grades)
 
 ### Grades Percentage
 If each row corresponds to the 25% of the final grade for each course, we need to transform the data in such a way that the sum of grades is equal to 100%.
-```{r }
+```{r, echo=TRUE}
 # Percentage of grades
 grades.per <- apply(grades,1:2,function(x) x*0.25)
 
@@ -103,7 +103,7 @@ kable(grades.per)
 ```
 
 ### Grades Stacked Barplots
-```{r, fig.height=6}
+```{r, echo=TRUE, fig.height=6}
 # Colors to be use as a matrix
 color.matrix <- matrix(c("darkolivegreen","darkolivegreen4","darkolivegreen3","darkolivegreen2",
          "dodgerblue4","dodgerblue3","dodgerblue","deepskyblue1",
@@ -155,9 +155,4 @@ plot.n(grades.per,Col="white",Space=0.15)
 
 # Row's ID
 text(labels=rownames(grades.per), col=color.matrix[,2], x=rep(3.5,4), y=c(85,90,95,100), srt = 0, xpd = TRUE,cex = 0.75,pos=4)
-```
-
-```{r, echo=FALSE, message=FALSE, warning=FALSE }
-# Creates the github markdown README.md file
-# render("stacked_plot.Rmd", output_format = "md_document", run_pandoc = T, output_file="README.md")
 ```
