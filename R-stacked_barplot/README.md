@@ -1,10 +1,11 @@
+Stacked barplot
+===============
 -   [Stacked barplot](#stacked-barplot)
     -   [Stacked plot: Group distribution](#stacked-plot-group-distribution)
     -   [Stacked plot: Grades](#stacked-plot-grades)
 
-Stacked barplot
-===============
-
+Definition
+----------
 This graphic representations allows to display different groups or variables of the same observation on top of each other.
 We'll explore two examples of stacked plots use, the numeric distribution of groups and as percentages.
 
