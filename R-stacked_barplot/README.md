@@ -69,7 +69,7 @@ plot.n(groups[3,],(groups[3,]/2)+groups[1,]+groups[2,])
 Stacked plot: Grades
 --------------------
 
-Now let's suppouse we have the grades of one student. Each column corresponds to the course and the rows to the grades.
+Now let's suppose we have the grades of one student. Each column corresponds to the course and the rows to the grades.
 
 ``` r
 # Matrix of 3x4, 3 conditions, 4 groups. Filled with random values
