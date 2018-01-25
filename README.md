@@ -1,13 +1,13 @@
 # R-Custom plots
-Inside each folder you'll find scripts different types of plots done with R programming language. Inside each directory, you'll find a README with instructions, the R code for the plot and a png figure.  
+Inside each folder you'll find scripts for creating different types of plots using R programming language. Click over each figure or directly over the directory.  
 
 List of plots:  
 > **Linear model plot**: with confidence interval and boostrap statistics.  
-> **Boxplot with density**: A modified boxplot with each point graphed and the ensity histogram.  
-> **Lines plot**: or spaguetti plot where x values are the variables that describes the same object.  
+> **Boxplot with density**: A modified boxplot with each observation plotted as points and a density histogram.  
+> **Lines plot**: or spaguetti plot where x values are the variables that describe the same object.  
 > **Heatmap**: A matrix of values represented with colors.  
 > **Custom Colormaps**: Useful tips for the creation of custom color palettes  
-> **Stacked barplot** Code for a stacked bar plot all from scratch, no ggplot.   
+> **Stacked barplot** Code for a stacked barplot all from scratch, no ggplot.   
 > **Dendrograms** Comming soon!  
   
 | Lineal Model & Bootstrap  | Boxplot with Density | Lines plot  |
