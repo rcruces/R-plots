@@ -8,10 +8,10 @@ List of plots:
 > **Heatmap**: A matrix of values represented with colors.  
 > **Custom Colormaps**: Useful tips for the creation of custom color palettes  
 > **Stacked barplot**: Code for a stacked barplot all from scratch, no ggplot.   
-> **Dendrograms** :Tree diagram that ilustrates the arregement of clusters.  
+> **Dendrograms**: Tree diagram that ilustrates the arregement of clusters.  
 > **Multi Dimensional Scaling**: Comming soon!
   
-| Lineal Model & Bootstrap  | Boxplot with Density | Lines plot  |
+| Linear Model & Bootstrap  | Boxplot with Density | Lines plot  |
 | ------------- | ------------- | ------------- |
 | [![](https://farm5.staticflickr.com/4710/38949336594_ed1aa61b7c_n.jpg)](https://github.com/rcruces/R-graph/tree/master/R-Boostrap-for-a-linear-model)  | [![](https://farm5.staticflickr.com/4654/38949339654_851044d138_m.jpg)](https://github.com/rcruces/R-graph/tree/master/R-Boxplot-with-points-Density)   | [![](https://farm5.staticflickr.com/4749/38949342424_be4e1f0c7d_m.jpg)](https://github.com/rcruces/R-graph/tree/master/R-spaghetti_plot)  |
 
