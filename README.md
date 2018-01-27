@@ -7,8 +7,9 @@ List of plots:
 > **Lines plot**: or spaguetti plot where x values are the variables that describe the same object.  
 > **Heatmap**: A matrix of values represented with colors.  
 > **Custom Colormaps**: Useful tips for the creation of custom color palettes  
-> **Stacked barplot** Code for a stacked barplot all from scratch, no ggplot.   
-> **Dendrograms** Comming soon!  
+> **Stacked barplot**: Code for a stacked barplot all from scratch, no ggplot.   
+> **Dendrograms** :Tree diagram that ilustrates the arregement of clusters.  
+> **Multi Dimensional Scaling**: Comming soon!
   
 | Lineal Model & Bootstrap  | Boxplot with Density | Lines plot  |
 | ------------- | ------------- | ------------- |
@@ -17,6 +18,10 @@ List of plots:
 
 | Custom Heatmap  | Colormaps  | Stacked barplot  | Dendrograms |
 | ------------- | ------------- | ------------- | ------------- |
-| [![](https://farm5.staticflickr.com/4656/39716130002_eaf75d9bed_n.jpg)](https://github.com/rcruces/R-plots/tree/master/R-heatmap)  | [![](https://farm5.staticflickr.com/4749/24902677477_9623eb1cf2_q.jpg)](https://github.com/rcruces/R-plots/tree/master/R-colors)  | [![](https://farm5.staticflickr.com/4745/24993042997_d67a2ee81e_q.jpg)](https://github.com/rcruces/R-plots/tree/master/R-stacked_barplot)  |   |
+| [![](https://farm5.staticflickr.com/4656/39716130002_eaf75d9bed_n.jpg)](https://github.com/rcruces/R-plots/tree/master/R-heatmap)  | [![](https://farm5.staticflickr.com/4749/24902677477_9623eb1cf2_q.jpg)](https://github.com/rcruces/R-plots/tree/master/R-colors)  | [![](https://farm5.staticflickr.com/4745/24993042997_d67a2ee81e_q.jpg)](https://github.com/rcruces/R-plots/tree/master/R-stacked_barplot)  | [![](https://farm5.staticflickr.com/4716/28138303359_a49c1215bc_m.jpg)](https://github.com/rcruces/R-plots/tree/master/R-dendrograms) |  
+
+| Multi Dimensional Scaling  |
+| ------------- |
+| Comming soon!  |
   
 For more R graphs check this [external gallery](http://www.r-graph-gallery.com).  
