@@ -1,5 +1,5 @@
 Dendrogram
-----------
+==========
 -   [Definition](#definition)
 -   [Dataset](#dataset)
 -   [Requirements](#requirements)
