@@ -22,6 +22,6 @@ List of plots:
 
 | Multi Dimensional Scaling  |
 | ------------- |
-| Comming soon!  |
+| [![](https://farm5.staticflickr.com/4708/28233006359_d7a473a434_q.jpg)](https://github.com/rcruces/R-plots/tree/master/R-multi_dimensional_scaling)  |
   
 For more R graphs check this [external gallery](http://www.r-graph-gallery.com).  
