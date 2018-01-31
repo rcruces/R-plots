@@ -14,10 +14,14 @@ hcc <- hclust(d,method = "ward.D")
 clusters <- cutree(hcc,k = 3)
 
 # Multi Dimensional Scaling Plot
-Color<-c("#ec7531ff","#4b2a00ff","#b40000ff")
+Color<-c("deeppink","forestgreen","red3")
 
+# Multi Dimensional Scaling
 library(MASS)
 mds = isoMDS(d)
-plot(mds$points,las=1,bty='n',pty='l',pch = 21, cex = 3, bg=c("#EC753196", "#4B2A0096", "#B4000096")[clusters],col = Color[clusters], xlab = "X", ylab = "Y",main="Multi Dimensional Scaling") 
 
-text(mds$points, labels = rownames(mds$points), cex = 1, col=c("#EC753196", "#4B2A0096", "#B4000096")[clusters])
+# plots the color
+plot(mds$points,las=1,bty='n',pty='l',pch = 21, cex = 4, bg=c("#FF149364","#228B2264","#CD000064")[clusters],col = Color[clusters], xlab = "X", ylab = "Y",ylim=c(-3,4),xlim=c(-3,4),main="Multi Dimensional Scaling") 
+# Add color labels to each observation
+text(mds$points, labels = rownames(mds$points), cex = 0.75, col=Color[clusters])
+
