@@ -1,4 +1,4 @@
-ubDendrogram
+Dendrogram
 ==========
 -   [Definition](#definition)
 -   [Dataset](#dataset)
