@@ -26,7 +26,7 @@ Two R libraries are require for this analysis `dendextend` and `circlize`.
 1. **`dendextend`** has a great tutorial with further detailles on the [cran.r-project page](https://cran.r-project.org/web/packages/dendextend/vignettes/introduction.html).
 1. **`circlize`** is a library that enhaces circular visualization in R. If you are interest in more information the [*Circlize Book*](http://zuguang.de/circlize_book/book/) is fantastic.
 1. **`ape`** R-library also known as Analyses of Phylogenetics and Evolution.
-To instal the packages you should type on the R-terminal:
+To install the packages you should type on the R-terminal:
 
 ``` r
 install.packages("dendextend")  
@@ -57,7 +57,9 @@ plot(ward.clust)
 Analyses of Phylogenetics and Evolution: `ape` library
 ------------------------------------------------------
 
-`ape` library plots the dendrograms with different output types. &gt; Note: plot as.phylo does not allow horiz=FALSE
+`ape` library plots the dendrograms with different output types.
+
+>  Note: plot as.phylo does not allow horiz=FALSE
 
 ``` r
 library(ape)
