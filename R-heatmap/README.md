@@ -142,7 +142,9 @@ heatmap.2(iris.scaled, col=col.map$color.palette, breaks = col.map$palette.break
 More Arguments
 --------------
 
-Here we'll add a color code per group in the rows, and some modifications to the heatmap output. Group color code is the next: ![](README_files/figure-markdown_github/unnamed-chunk-5-1.png)
+Here we'll add a color code per group in the rows, and some modifications to the heatmap output. Group color code is the next:
+
+![](README_files/figure-markdown_github/unnamed-chunk-5-1.png)
 
 ``` r
 # More Customizations
