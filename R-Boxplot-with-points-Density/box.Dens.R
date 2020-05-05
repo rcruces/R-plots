@@ -9,7 +9,7 @@
 #
 # -------------------------------------------------------------------------
 
-#Generates a set of data
+#Generates two vectors
 a <- rnorm(80 , mean=5 , sd=10)
 b <- rnorm(120 , mean=-5 , sd=6)
 
@@ -45,5 +45,60 @@ y=seq(min(b),max(b),length.out = length(d$x))
 polygon(x=3+d$y*10,y=y,col="#CD853F32",border = "#CD853FFA",lwd=5)
 
 
+# -------------------------------------------------------------------------
+#
+#### Functoin: Boxplot with points & Density ####
+#
+# -------------------------------------------------------------------------
+#Generates a set of data
+# define numbers of groups
+N <- 5
+x <- rnorm(100*N , mean=0 , sd=10)
+Gr <- as.factor(sample(1:N, 100*N, replace = TRUE))
 
+box.density <- function(x, Gr=NULL, x.disp=0.5, p.cex=1, lwd=1, pch=19, xlim=c(0,N+1.5),
+                        Col=NULL, main="Box-Density plot", xlab='Group', ylab='x', medcol="black",
+                        col.axis="gray15",col.lab="gray8",col.main="gray8",
+                        whisklty = 2, staplelwd = 2, whisklwd=2,boxlwd=2, medlwd=3,frame.plot=FALSE,
+                        cex.axis=1.5,cex.lab=1.2,cex=0.5, density=TRUE
+                        ) {
+        if (is.null(Gr)) {Gr <- as.factor(rep(1,length(x)))}
+        if (class(Gr)!="factor") {stop("[ERROR]  Gr must be a factor defining group belonging")}
+        N <- length(levels(Gr))
+        if (is.null(Col)) {Col <- rainbow(N, alpha = 1)}
+        # if horizontal==TRUE
+        # 
+        # Blank PLot
+        boxplot(x~Gr, axes=FALSE,col=NA,border=NA,xlim=xlim,
+                main=main, xlab=xlab, ylab=ylab)
+        
+        levels(Gr)
+        # Plot the points
+        for (i in 1:N) { inx <- Gr==levels(Gr)[i]
+                len <- length(x[inx])
+                points(i+rnorm(len , mean=0 , sd=x.disp), x[inx], 
+                col=scales::alpha(Col[i],0.6), lwd=lwd,cex=p.cex, pch=pch, bg="white")
+                
+                # Plot the density
+                # density value and label
+                if (density==TRUE){
+                        par(xpd=TRUE)
+                        d=density(x[inx], bw = "SJ")
+                        y=seq(min(x[inx]),max(x[inx]),length.out = length(d$x))
+                        polygon(x=N+1+d$y*10,y=y,col=scales::alpha(Col[i],0.4),border = Col[i], lwd=1.5)        
+                }
+                }
+        # Boxes
+        boxplot(x~Gr,  add=TRUE, outline=FALSE, axes=FALSE, xlim=xlim, at=1:N, las=1, xaxt='n'
+                ,medcol=medcol, col=scales::alpha(Col, 0.3), border=Col
+                ,col.axis=col.axis, col.lab=col.lab, col.main=col.main
+                ,whisklty = whisklty, staplelwd = staplelwd, whisklwd=whisklwd
+                ,boxlwd=boxlwd, medlwd=medlwd, frame.plot=frame.plot
+                ,cex.axis=cex.axis, cex.lab=cex.lab, cex=cex)
+        # Axes
+        axis(1, at=1:N, col.axis="gray8",labels=levels(Gr), lty=1, col="gray8", las=1,lwd=2,cex.axis=1,col.lab="gray8")
+        axis(2, at=seq(round(min(x),-1),round(max(x),-1),10), lty=1, col="gray8",las=1,lwd=2)
+        
+}
 
+box.density(x, Gr, x.disp=0.15, Col=viridis::viridis(5), density = TRUE)
