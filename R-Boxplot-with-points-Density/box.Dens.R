@@ -52,15 +52,11 @@ polygon(x=3+d$y*10,y=y,col="#CD853F32",border = "#CD853FFA",lwd=5)
 # -------------------------------------------------------------------------
 #Generates a set of data
 # define numbers of groups
-N <- 5
-x <- rnorm(100*N , mean=0 , sd=10)
-Gr <- as.factor(sample(1:N, 100*N, replace = TRUE))
-
 box.density <- function(x, Gr=NULL, x.disp=0.5, p.cex=1, lwd=1, pch=19, xlim=c(0,N+1.5),
-                        Col=NULL, main="Box-Density plot", xlab='Group', ylab='x', medcol="black",
+                        Col=NULL, main="Box-Density plot", xlab='Group', ylab='x', medcol="darkred",
                         col.axis="gray15",col.lab="gray8",col.main="gray8",
                         whisklty = 2, staplelwd = 2, whisklwd=2,boxlwd=2, medlwd=3,frame.plot=FALSE,
-                        cex.axis=1.5,cex.lab=1.2,cex=0.5, density=TRUE
+                        cex.axis=1.5,cex.lab=1.2,cex=0.5, density=TRUE, h.pos=0.5
                         ) {
         if (is.null(Gr)) {Gr <- as.factor(rep(1,length(x)))}
         if (class(Gr)!="factor") {stop("[ERROR]  Gr must be a factor defining group belonging")}
@@ -85,7 +81,7 @@ box.density <- function(x, Gr=NULL, x.disp=0.5, p.cex=1, lwd=1, pch=19, xlim=c(0
                         par(xpd=TRUE)
                         d=density(x[inx], bw = "SJ")
                         y=seq(min(x[inx]),max(x[inx]),length.out = length(d$x))
-                        polygon(x=N+1+d$y*10,y=y,col=scales::alpha(Col[i],0.4),border = Col[i], lwd=1.5)        
+                        polygon(x=N+h.pos+d$y*10,y=y,col=scales::alpha(Col[i],0.4),border = Col[i], lwd=1.5)        
                 }
                 }
         # Boxes
@@ -101,4 +97,12 @@ box.density <- function(x, Gr=NULL, x.disp=0.5, p.cex=1, lwd=1, pch=19, xlim=c(0
         
 }
 
+# Number of groups
+N <- 3
+# NUmber of points
+x <- sort(rnorm(100*N , mean=0 , sd=10))
+# Group labels
+Gr <- as.factor(sort(sample(1:N, 100*N, replace = TRUE)))
+
+# Plot the data
 box.density(x, Gr, x.disp=0.15, Col=viridis::viridis(5), density = TRUE)
