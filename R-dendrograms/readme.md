@@ -8,7 +8,6 @@ Dendrogram
 -   [Colorful Dendrogram: Dendrogram Object + `dendextend` library](#colorful-dendrogram-dendrogram-object-dendextend-library)
 -   [Circular Dendrogram: `circlize` + `dendextend` libraries](#circular-dendrogram-circlize-dendextend-libraries)
 
-
 Definition
 ----------
 
@@ -23,9 +22,9 @@ Requirements
 ------------
 
 Two R libraries are require for this analysis `dendextend` and `circlize`.
-1. **`dendextend`** has a great tutorial with further detailles on the [cran.r-project page](https://cran.r-project.org/web/packages/dendextend/vignettes/introduction.html).
-1. **`circlize`** is a library that enhaces circular visualization in R. If you are interest in more information the [*Circlize Book*](http://zuguang.de/circlize_book/book/) is fantastic.
-1. **`ape`** R-library also known as Analyses of Phylogenetics and Evolution.
+1.  **`dendextend`** has a great tutorial with further detailles on the [cran.r-project page](https://cran.r-project.org/web/packages/dendextend/vignettes/introduction.html).
+1.  **`circlize`** is a library that enhaces circular visualization in R. If you are interest in more information the [*Circlize Book*](http://zuguang.de/circlize_book/book/) is fantastic.
+1.  **`ape`** R-library also known as Analyses of Phylogenetics and Evolution.
 To install the packages you should type on the R-terminal:
 
 ``` r
