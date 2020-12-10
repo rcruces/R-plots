@@ -39,11 +39,8 @@ The [*Iris* flower dataset](https://en.wikipedia.org/wiki/Iris_flower_data_set) 
 The columns 1 to 4 have the morphological characteristics of each Iris observation:
 
 1.  *Sepal Length*
-
 2.  *Sepal Width*
-
 3.  *Petal Length*
-
 4.  *Petal Width*
 
 The fifth column corresponds to the name of species. On the next figure you can see what are these features: ![](https://farm5.staticflickr.com/4751/39683081242_ed4d0de9e0_o.png)
