@@ -15,36 +15,38 @@ Description of the files
 ------------------------
 
 Inside this Directory you will find:
-1. `README.md`  github markdown format
-1. `README.Rmd` R-markdown document with the example.
-1. `heatmap_code.R` Only the code without explanations.
+1.  `README.md`  github markdown format.
+1.  `README.Rmd` R-markdown document with the example.
+1.  `heatmap_code.R` Only the code without explanations.
 
 Heatmap Definition
-==================
+------------------
 
 A heatmap is a matrix of values represented with colors. If you use it along a clustering method such as *Hierarchical agglomerative clustering*, heatmap are a very good approach to visualize the diferences between groups.
 
 In this example we will use the [*Iris* flower dataset](https://en.wikipedia.org/wiki/Iris_flower_data_set), and we will create a custom color palette to optimize the visualization. Finally we'll explore diferent ploting of the data.
 
 Iris Dataset
-============
+------------
 
 The [*Iris* flower dataset](https://en.wikipedia.org/wiki/Iris_flower_data_set) contains 5 variables and 150 observations. The data consists of 50 samples of three species of Iris:
 
--   *I. Setosa*
+-  *I. Setosa*
 
--   *I. Versicolor*
+-  *I. Versicolor*
 
--   *I. Virginica*
+-  *I. Virginica*
+
 
 The columns 1 to 4 have the morphological characteristics of each Iris observation:
-1. *Sepal Length*
+1.  *Sepal Length*
 
 1.  *Sepal Width*
 
-2.  *Petal Length*
+1.  *Petal Length*
 
-3.  *Petal Width*
+1.  *Petal Width*
+
 
 The fifth column corresponds to the name of species. On the next figure you can see what are these features: ![](https://farm5.staticflickr.com/4751/39683081242_ed4d0de9e0_o.png)
 
