@@ -15,7 +15,6 @@ List of plots:
 | ------------- | ------------- | ------------- |
 | [![](https://farm5.staticflickr.com/4710/38949336594_ed1aa61b7c_n.jpg)](https://github.com/rcruces/R-graph/tree/master/R-Boostrap-for-a-linear-model)  | [![](https://farm5.staticflickr.com/4654/38949339654_851044d138_m.jpg)](https://github.com/rcruces/R-graph/tree/master/R-Boxplot-with-points-Density)   | [![](https://farm5.staticflickr.com/4749/38949342424_be4e1f0c7d_m.jpg)](https://github.com/rcruces/R-graph/tree/master/R-spaghetti_plot)  |
 
-
 | Custom Heatmap  | Colormaps  | Stacked barplot  | Dendrograms |
 | ------------- | ------------- | ------------- | ------------- |
 | [![](https://farm5.staticflickr.com/4656/39716130002_eaf75d9bed_n.jpg)](https://github.com/rcruces/R-plots/tree/master/R-heatmap)  | [![](https://farm5.staticflickr.com/4749/24902677477_9623eb1cf2_q.jpg)](https://github.com/rcruces/R-plots/tree/master/R-colors)  | [![](https://farm5.staticflickr.com/4745/24993042997_d67a2ee81e_q.jpg)](https://github.com/rcruces/R-plots/tree/master/R-stacked_barplot)  | [![](https://farm5.staticflickr.com/4716/28138303359_a49c1215bc_m.jpg)](https://github.com/rcruces/R-plots/tree/master/R-dendrograms) |  
