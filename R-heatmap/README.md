@@ -16,8 +16,8 @@ Description of the files
 
 Inside this Directory you will find:
 1.  `README.md`  github markdown format.
-1.  `README.Rmd` R-markdown document with the example.
-1.  `heatmap_code.R` Only the code without explanations.
+2.  `README.Rmd` R-markdown document with the example.
+3.  `heatmap_code.R` Only the code without explanations.
 
 Heatmap Definition
 ------------------
@@ -37,7 +37,6 @@ The [*Iris* flower dataset](https://en.wikipedia.org/wiki/Iris_flower_data_set) 
 
 -  *I. Virginica*
 
-
 The columns 1 to 4 have the morphological characteristics of each Iris observation:
 1.  *Sepal Length*
 
@@ -46,7 +45,6 @@ The columns 1 to 4 have the morphological characteristics of each Iris observati
 1.  *Petal Length*
 
 1.  *Petal Width*
-
 
 The fifth column corresponds to the name of species. On the next figure you can see what are these features: ![](https://farm5.staticflickr.com/4751/39683081242_ed4d0de9e0_o.png)
 
@@ -72,7 +70,7 @@ heatmap.2(iris.mtx)
 ![](README_files/figure-markdown_github/unnamed-chunk-1-1.png)
 
 Heatmap Customization
-=====================
+---------------------
 
 Color map
 ---------
