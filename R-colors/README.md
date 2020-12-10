@@ -10,15 +10,15 @@ R Colors
     -   [Custom Color Palettes](#custom-color-palettes)
     -   [Custom Color Palettes Interpolated](#custom-color-palettes-interpolated)
 
-Repository content:
-===================
+Repository content
+------------------
 
 1.  `README.md`
 2.  `Rcolor.pdf` - Here you will find the names of a wide variety of colors in R.
 3.  `colormaps_functions.R` FUnctions for customizing and visualizing color maps.
 
 Colors and Data Visualization
-=============================
+-----------------------------
 
 Data visualization involves the esquematization of information and its representation as a visual object. The main goal is to communicate information clearly.
 Color palettes are a very useful tool for data visualization, its proper utilization impacts in the quality of the visual information we want to transmit.
