@@ -1,4 +1,7 @@
 # R-Custom plots
+[![CircleCI](https://circleci.com/gh/rcruces/R-plots/tree/master.svg?style=shield)](https://circleci.com/gh/rcruces/R-plots/tree/master)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/56c31d2f7efb45d78a9d5e24c9ae1e46)](https://www.codacy.com/gh/rcruces/R-plots/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=rcruces/R-plots&amp;utm_campaign=Badge_Grade)  
+
 Inside each folder you'll find scripts for creating different types of plots using R programming language. Click over each figure or directly over the directory.  
 
 List of plots:  
