@@ -13,9 +13,9 @@ Stacked plot: Group distribution
 --------------------------------
 
 Here we'll plot the number of observations in four groups, and three possible conditions:
-1. Excluded
-2. Included
-3. Incomplete
+1.  Excluded
+2.  Included
+3.  Incomplete
 
 > NOTE: Border color, color, and space could be different per stack and per bar.
 
